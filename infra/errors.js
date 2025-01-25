@@ -25,7 +25,7 @@ export class ServiceError extends Error {
     });
     this.name = "InternalServerError";
     this.action = "Verifique se o serviço está disponível.";
-    this.statusCode = 500;
+    this.statusCode = 503;
   }
 
   toJSON() {
